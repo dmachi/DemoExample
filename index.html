@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Demo</title>
+		<!-- dojo reset -->
+		<link rel="stylesheet" href="../dojotoolkit/dojo/resources/dojo.css">
+
+		<!-- theme for claro or some other theme -->	
+		<link rel="stylesheet" href="../dojotoolkit/dijit/themes/claro/claro.css">
+
+		<!-- any custom css -->
+		<link rel="stylesheet" href="css/DemoExample.css">
+
+	</head>
+
+	<body class="claro">
+	
+		<!-- ULTIMATELY THERE MAY BE CHROME AROUND THE "demoContainers", SO ISOLATE THE DEMO TO THIS REGION -->
+		<div id="demoContainer">
+			<!-- DEMO MARKUP SHOULD GO HERE -->
+			<h3>Loading...</h3>
+		</div>
+
+		<!--  LINK TO DOJO AT THE END OF THE BODY -->
+		<script type="text/javascript" src="../dojotoolkit/dojo/dojo.js" djConfig="parseOnLoad: true, djConfig: true"></script>
+
+		<!--
+			DON"T PUT OTHER LINKS ASIDE FROM 'layer.js' IN HERE.  ALL OF YOUR REQUIRES SHOULD EXIST
+			IN THAT FILE.  IT CAN ALSO PULL IN CODE THAT SHOULD RUN onReady
+		-->
+		<script type="text/javascript" src="layer.js"></script>
+	</body>
+</html>
