@@ -1,1 +1,21 @@
 Example Layout for creating Dojo Demos
+
+This is a simple structure that allows creation of simple demos that will ultimately be consumed by a demo engine so that 
+we may achieve demos that are visually attractive and performant at the same time.  The structure defined here does not depend on
+any serverside support at the current time.  
+
+While there is an existing demo engine, we don't want ensuring it supports all the possible demos to get in the way of actually getting demos done
+so we will port the demos into the demo engine as they come in. The structure is layed out as it is to make this process painless.   As more of them are placed
+into the repository and we are feeling comfortable with it, we will continue to update this document with what the standard structure should look like.
+
+To create a demo, a project should be created in Github (for now) with the same basic structure as what is defined here.  Additional files can be added in as well.
+The setup currently assume there is a dojo in ../dojotoolkit/dojo/dojo.js, but that can be changed if necessary.
+
+For simple projects that have no dependency on server bound data source the above directions should be enough to get started and get demos working.  If you demo requires
+additional capabilities, such as server backed data or some other type of processing on the Server, please get in touch with me (dmachi@dojotoolkit.org) so we can discuss 
+and come to an agreement on the structure.  It is important that we are able to consume the projects and automate some of teh building processes and startup to 
+keep the demos performing well through upgrades into the future.
+
+This actual project, DemoExample, is more or less empty.  It contains a very simple hello world example layout with comments on where to put pieces.
+
+If you have questions or concerns please let me know.
